@@ -1558,10 +1558,42 @@ ul.collapsible-tab li.open .content{
 }
 
 footer .payment-icons{
-    margin-top: 54px;
+    margin-top: 9px;
 }
 
+.footer .widget{
+    margin-bottom: 0 !important;
+}
+.section-product-list .nav-top-right .owl-nav{
+    left: 0;
+    top: 36%;
+}
+.section-product-list .owl-next{
+    right: -31px;
+    position: absolute;
+}
+.section-product-list .owl-prev{
+    left: -31px;
+    position: absolute;
+}
+.section-product-list .owl-prev{
+    transform: rotate(180deg);
+}
+ul.privacy-ul{
+  list-style: none;
 
-
-
-
+}
+ul.privacy-ul li{
+    position: relative;
+}
+ul.privacy-ul li:after{
+    content: "\f0da";
+    font-family: 'fontAwesome';
+    color: #d60d46;
+    position: absolute;
+    left: -15px;
+    top: 1px;
+}
+ul.privacy-ul li:nth-child(odd):after{
+    color: #83a979;
+}

@@ -1,0 +1,417 @@
+.z-depth-1, .dropdown-content {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content {
+  background-color: #fff;
+  margin: 0;
+  display: none;
+  min-width: 100px;
+  max-height: 650px;
+  overflow-y: auto;
+  opacity: 0;
+  position: absolute;
+  z-index: 999;
+  will-change: width, height;
+  padding-left: 0;
+  border-radius: 2px;
+  border-bottom: 5px solid #3e94ca;
+}
+.dropdown-content li {
+  clear: both;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: pointer;
+  min-height: 50px;
+  line-height: 1.5rem;
+  width: 100%;
+  text-align: left;
+  text-transform: none;
+  font-family: 'Roboto', sans-serif;
+}
+.dropdown-content li:hover, .dropdown-content li.active, .dropdown-content li.selected {
+  background-color: #fafafa;
+}
+.dropdown-content li.active.selected {
+  background-color: #ededed;
+}
+.dropdown-content li.divider {
+  min-height: 0;
+  height: 1px;
+}
+.dropdown-content li > a, .dropdown-content li > span {
+  font-size: 16px;
+  color: #333;
+  display: block;
+  line-height: 22px;
+  padding: 14px 16px;
+}
+.dropdown-content li > span > label {
+  top: 1px;
+  left: 0;
+  height: 18px;
+}
+.dropdown-content li > a > i {
+  height: inherit;
+  line-height: inherit;
+}
+
+/* Text inputs */
+input:not([type]) {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #3e94ca;
+  border-radius: 0;
+  outline: none;
+  height: 3rem;
+  width: 100%;
+  font-size: 1rem;
+  margin: 0 0 20px 0;
+  padding: 0;
+  box-shadow: none;
+  box-sizing: content-box;
+  transition: all 0.3s;
+}
+input:not([type]) + label:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 60px;
+  opacity: 0;
+  transition: .2s opacity ease-out, .2s color ease-out;
+}
+
+.input-field {
+  width: 280px;
+  position: relative;
+  margin-top: 1rem;
+}
+.input-field.inline {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.input-field.inline input,
+.input-field.inline .select-dropdown {
+  margin-bottom: 1rem;
+}
+.input-field label {
+  color: #3e94ca;
+  position: absolute;
+  top: 0.8rem;
+  left: 0;
+  font-size: 1rem;
+  cursor: text;
+  transition: .2s ease-out;
+}
+.input-field label.active {
+  font-size: 0.8rem;
+  transform: translateY(-140%);
+}
+
+.select-country select {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  height: 3rem;
+}
+.select-country input {
+  color: #3e94ca;
+}
+.select-country ul, .select-country ol, .select-country li {
+  list-style: none;
+}
+
+.select-label {
+  position: absolute;
+}
+
+.select-wrapper {
+  position: relative;
+}
+.select-wrapper input.select-dropdown {
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #3e94ca;
+  outline: none;
+  height: 3rem;
+  line-height: 3rem;
+  width: 100%;
+  font-size: 1rem;
+  margin: 0 0 20px 0;
+  padding: 0 0 0 30px;
+  display: block;
+}
+.select-wrapper span.caret {
+  color: initial;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 10px;
+  margin: auto 0;
+  font-size: 10px;
+  line-height: 10px;
+  color: #3e94ca;
+}
+.select-wrapper span.caret.disabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+.select-wrapper + label {
+  position: absolute;
+  top: -14px;
+  font-size: 0.8rem;
+}
+
+.select-wrapper i {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.select-dropdown li img {
+  height: 20px;
+  width: 30px;
+  margin: 13px 15px;
+  float: left;
+}
+
+#container {
+  margin-top: 20px;
+  margin-left: 30px;
+  position: absolute;
+  background: #3e94ca;
+  bottom: 36px;
+  left: -26px;
+}
+
+.pulse {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background: url(http://agnescort.com/btk/globe.svg);
+  z-index: 10;
+  position: absolute;
+  background-size: 21px;
+}
+
+.input-field:hover .dot {
+  animation: ripple 1s linear infinite;
+  -webkit-animation: ripple 1s linear infinite;
+  animation: ripple 1s linear infinite;
+  -webkit-transform: translate(0, 20px);
+  transform: translate(0, 20px);
+  opacity: 1;
+  visibility: visible;
+}
+
+.dot {
+  background: transparent;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: -26px;
+  left: -5px;
+  z-index: 1;
+  opacity: 0;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+  }
+}
+section {
+  background: #ff86a8;
+}
+
+.select-wrapper input.select-dropdown {
+  color: #3e94ca;
+}
+
+.hero-container {
+  background: #ff86a8;
+}
+.hero-container h1 {
+  padding: 0;
+  font-size: 26px;
+}
+
+.hero-btn-secondary {
+  position: relative;
+  white-space: nowrap;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 30px 0 14px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  background: #388cc5;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  transition: all .15s ease;
+  margin-top: 30px;
+}
+.hero-btn-secondary:after {
+  margin-left: 0;
+  font-family: "fontAwesome";
+  content: "\f078";
+  font-size: 0.9em;
+  vertical-align: 0%;
+  position: absolute;
+  right: 13px;
+  transform: rotate(-89deg);
+  top: 1px;
+}
+.hero-btn-secondary:hover {
+  background: #307eaf;
+}
+
+@media (max-width: 1000px) {
+  .hero-left {
+    padding: 10px;
+    height: 360px;
+  }
+
+  .hero-container-com.hero-container h1 {
+    position: relative;
+    height: auto;
+    background: none;
+    top: auto;
+  }
+}
+@media (min-width: 1000px) {
+  .b2k-map-wrapper {
+    position: relative;
+  }
+
+  .b2k-map {
+    position: absolute;
+    left: -210px;
+    width: 700px;
+    top: 30px;
+  }
+
+  .hero-container h1 {
+    margin: 23px 0 30px 0;
+    padding: 0;
+    font-size: 26px;
+  }
+
+  .hero-left {
+    padding-left: 50px;
+  }
+}
+/*map marker*/
+aside .marker {
+  position: absolute;
+  top: -59px;
+  left: -170px;
+  border-radius: 50%;
+}
+
+.popover {
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  bottom: calc(100% - 5px);
+  pointer-events: none;
+  text-align: left;
+  opacity: 1;
+  transform: scale(0.85);
+  transform-origin: 50% 100%;
+  transition: opacity 0.2s cubic-bezier(0.255, 0.89, 0.25, 1.135), transform 0.2s cubic-bezier(0.255, 0.89, 0.25, 1.135);
+}
+
+.popover .content {
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #107fb6;
+  box-shadow: 0 15px 35px rgba(23, 55, 87, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+.popover .content p {
+  margin: 0;
+  padding: 5px;
+  color: #fff;
+}
+
+.popover:after {
+  content: "";
+  position: absolute;
+  width: 41px;
+  height: 15px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+  background-image: url(/img/atlas/map/popover-arrow.svg);
+}
+
+.marker.animated .pulse {
+  animation: pulse 3s ease-out 1.5s infinite;
+}
+
+aside .marker .pulse {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  transform-origin: 50% 50%;
+  opacity: 1;
+  pointer-events: none;
+  background-image: none;
+}
+.wrap.hero-container, .wrap.subpage-title{
+  border-top: 2px solid #d60d46;
+}
+.hero-container h1{
+  color: #fff;
+}
+.select-wrapper input.select-dropdown {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.select-wrapper span.caret{
+  color: #fff;
+}
+.select-wrapper input.select-dropdown:hover, .select-wrapper input.select-dropdown .select-wrapper:hover .carat{
+  color: #fff;
+}
+.dropdown-content{
+  border-bottom: 5px solid #d60d46;
+}
+a.go-site{
+  text-decoration: none;
+  background: #d60d46;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 19px;
+  transition: all 0.5s;
+}
+a.go-site:hover{
+  background: #fff;
+  color: #d60d46;
+}
+.go-site i{
+  position: relative;
+  left: 10px;
+  top: 1px;
+}

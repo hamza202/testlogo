@@ -353,7 +353,7 @@
   function linda_innit_carousel() {
     $(".owl-carousel").each(function(index, el) {
       var config = $(this).data();
-      config.navText = ['<span class="flaticon-arrows-4"></span>', '<span class="flaticon-arrows-3"></span>'];
+      config.navText = ['<span class="flaticon-arrows-1"></span>', '<span class="flaticon-arrows-1"></span>'];
       config.smartSpeed = "800";
 
       // Set rtk
