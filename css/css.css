@@ -82,6 +82,7 @@ input:not([type]) + label:after {
 
 .input-field {
   width: 280px;
+  margin: 0 auto;
   position: relative;
   margin-top: 1rem;
 }
@@ -232,7 +233,7 @@ input:not([type]) + label:after {
   }
 }
 section {
-  background: #ff86a8;
+  background: #36a8de;
 }
 
 .select-wrapper input.select-dropdown {
@@ -240,7 +241,7 @@ section {
 }
 
 .hero-container {
-  background: #ff86a8;
+  background: #36a8de;
 }
 .hero-container h1 {
   padding: 0;
@@ -305,7 +306,7 @@ section {
   }
 
   .hero-container h1 {
-    margin: 23px 0 30px 0;
+    margin: 17px auto;
     padding: 0;
     font-size: 26px;
   }
@@ -377,7 +378,7 @@ aside .marker .pulse {
   background-image: none;
 }
 .wrap.hero-container, .wrap.subpage-title{
-  border-top: 2px solid #d60d46;
+  border-top: 2px solid #0c44c1;
 }
 .hero-container h1{
   color: #fff;
@@ -393,11 +394,11 @@ aside .marker .pulse {
   color: #fff;
 }
 .dropdown-content{
-  border-bottom: 5px solid #d60d46;
+  border-bottom: 5px solid #307ee2;
 }
-a.go-site{
+.go-site{
   text-decoration: none;
-  background: #d60d46;
+  background: #307ee2;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -405,13 +406,17 @@ a.go-site{
   margin-top: 20px;
   font-size: 19px;
   transition: all 0.5s;
+  border: 0;
 }
-a.go-site:hover{
+.go-site:hover{
   background: #fff;
-  color: #d60d46;
+  color: #307ee2;
 }
 .go-site i{
   position: relative;
   left: 10px;
   top: 1px;
+}
+.hero-container h1{
+  margin: 17px auto !important;
 }

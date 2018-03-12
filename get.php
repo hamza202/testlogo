@@ -19,8 +19,9 @@
 <body>
 <!-- Homepage Hero container (contains main menu) -->
 <div class="wrap hero-container hero-container-com" style="height: 100%">
-    <div class="grid-container">
-        <div class="grid-50 hero-left mobile-grid-100">
+    <div class="grid-container text-center">
+        <div class="grid-100 hero-left mobile-grid-100">
+            <form id="id="myform">
             <h1 class="loc-head">Select Your Location</h1>
             <section class="select-country">
                 <div class="input-field">
@@ -28,21 +29,21 @@
                         <div class="dot"></div>
                         <div class="pulse"></div>
                     </div>
-                    <select class="icons">
+                    <select class="icons " name="BusinessDistrictId"  required>
                         <option value="" disabled selected>--Select--</option>
-                        <option value="" data-icon="images/flags/1.png" class="circle">Spain</option>
-                        <option value="" data-icon="images/flags/2.png" class="circle">United Kingdom</option>
-                        <option value="" data-icon="images/flags/3.png" class="circle">Greek</option>
-                        <option value="" data-icon="images/flags/4.png" class="circle">Nautische Deutschland</option>
-                        <option value="" data-icon="images/flags/5.png" class="circle">Denmark</option>
-                        <option value="" data-icon="images/flags/6.png" class="circle">Brésil</option>
-                        <option value="" data-icon="images/flags/7.png" class="circle">Argentina</option>
+                        <option value="Spain" data-icon="images/flags/1.png" class="circle">Spain</option>
+                        <option value="Kingdom" data-icon="images/flags/2.png" class="circle">United Kingdom</option>
+                        <option value="Greek" data-icon="images/flags/3.png" class="circle">Greek</option>
+                        <option value="Deutschland" data-icon="images/flags/4.png" class="circle">Nautische Deutschland</option>
+                        <option value="Denmark" data-icon="images/flags/5.png" class="circle">Denmark</option>
+                        <option value="Brésil" data-icon="images/flags/6.png" class="circle">Brésil</option>
+                        <option value="Argentina" data-icon="images/flags/7.png" class="circle">Argentina</option>
                     </select>
                 </div>
             </section>
 
-            <a href="#" class="go-site">Go To Site <i class="fa fa-angle-right"></i></a>
-
+                <button type="submit" class="go-site"> Go To Site <i class="fa fa-angle-right"></i></button>
+            </form>
         </div>
         <div class="grid-50 mobile-grid-100 b2k-map-wrapper">
 
@@ -62,13 +63,18 @@
 
 
 <script src="js/jquery.min.js"></script>
+
 <script src="js/materialize.min.js"></script>
+
 <script>
+
+
     $(document).ready(function(){
     $(document).ready(function() {
         $('.select-country select').material_select();
     });
-})
+});
+
 </script>
 </body>
 </html>
